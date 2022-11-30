@@ -1,0 +1,44 @@
+@import 'styles/variable.less';
+
+.login {
+  background: @login;
+  min-height: 100vh;
+  text-align: center;
+
+  .form-container {
+    margin-top: 8%;
+
+    .form-title {
+      color: @white;
+      font-size: 28px;
+    }
+
+    .form-login {
+      width: 338px;
+      padding: 32px 24px 12px 24px;
+      border-radius: 10px;
+      background-color: @white;
+
+      .form-item-forgot {
+        margin-bottom: 8px;
+      }
+
+      .ant-checkbox-wrapper,
+      .ant-checkbox-wrapper-checked {
+        float: left;
+      }
+
+      .login-form-forgot {
+        float: right;
+      }
+
+      .login-form-button {
+        width: 100%;
+      }
+
+      .login-error {
+        color: @delete;
+      }
+    }
+  }
+}

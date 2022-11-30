@@ -1,0 +1,56 @@
+@import 'styles/variable.less';
+
+.App {
+  text-align: center;
+  font-size: 16px;
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+
+.custom-divider {
+  .ant-divider-horizontal.ant-divider-with-text::before,
+  .ant-divider-horizontal.ant-divider-with-text::after {
+    border-top: 1px solid @primary;
+  }
+
+  .ant-divider-horizontal.ant-divider-with-text {
+    font-size: 18px;
+  }
+}
+
+.error,
+.notfound {
+  &-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  &-image {
+    margin-top: 16px;
+    margin-bottom: 24px;
+    height: 500px;
+  }
+
+  &-title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 32px;
+    color: @black;
+  }
+
+  &-desc {
+    font-size: 16px;
+    line-height: 24px;
+    color: @black-medium;
+  }
+
+  &-btn {
+    margin-top: 48px;
+  }
+}

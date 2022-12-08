@@ -60,7 +60,7 @@ function Login() {
         dispatch(
           setToken(loginResult)
         );
-        navigate("/home");
+        navigate("/wilayah/1");
 
       }
     }
